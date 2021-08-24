@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*.kalam {
+  font-family: 'Kalam', cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*.btn-no-outline,
+*.btn-no-outline:focus,
+*.btn-no-outline:active,
+*.btn-no-outline:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+* *::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+* *::-webkit-scrollbar-track {
+  background-color: rgb(65, 60, 46);
+  width: 18px !important;
+  height: 18px !important;
+}
+
+* *::-webkit-scrollbar-thumb {
+  background-color: rgb(248, 184, 22);
+  border-radius: 20px;
+  transition: all linear 1000ms;
+}
+
+* *::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(175, 127, 5);
+  cursor: pointer;
+}
+
+.btn-fade-action {
+  transition: all linear 300ms;
+}
+
+.fade-grow-10 {
+  transition: all linear 300ms;
+}
+
+.fade-grow-10:hover {
+  transform: scale(0.9);
+}
+
+.scrollbar-transparent-bg::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.scrollbar-transparent-bg::-webkit-scrollbar-track {
+  background-color: #efefef;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.scrollbar-transparent-bg::-webkit-scrollbar-thumb {
+  background-color: rgb(248, 184, 22);
+  border-radius: 20px;
+  transition: all linear 1000ms;
+}
+
+.scrollbar-transparent-bg::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(175, 127, 5);
+  cursor: pointer;
+}
+
+.ticker-table-header {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 230px;
+    height: calc(100vh - 56px);
+    left: -1000px;
+    transition: all linear 400ms;
+    z-index: 100;
+  }
+
+  .sidebar.active {
+    left: 0px;
+  }
+
+  .ticker-table-header {
+    font-size: 10px;
+  }
+}
